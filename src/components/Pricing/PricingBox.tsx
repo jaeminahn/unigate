@@ -32,6 +32,8 @@ const PricingBox = (props: {
         ? "bg-black/5 text-black hover:bg-black/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
         : "bg-primary text-white hover:opacity-90";
 
+  const noteText = note ?? " ";
+
   return (
     <div className="w-full">
       <div
@@ -64,19 +66,23 @@ const PricingBox = (props: {
           <div className="text-[28px] font-bold text-black dark:text-white">
             {priceLabel}
           </div>
-          {note ? (
-            <p className="mt-2 text-sm font-medium text-black/50 dark:text-white/50">
-              {note}
-            </p>
-          ) : null}
+          <p
+            className={`mt-2 min-h-[20px] text-sm font-medium text-black/50 dark:text-white/50 ${
+              note ? "" : "opacity-0"
+            }`}
+          >
+            {noteText}
+          </p>
         </div>
 
-        <p className="text-body-color mb-7 text-base">{subtitle}</p>
+        <p className="text-body-color mb-7 line-clamp-2 min-h-[48px] text-base leading-relaxed">
+          {subtitle}
+        </p>
 
-        <div className="border-body-color/10 mb-8 border-b pb-8 dark:border-white/10">
+        <div className="border-body-color/10 mb-6 border-b pb-6 dark:border-white/10">
           <Link
             href={ctaHref}
-            className={`flex w-full items-center justify-center rounded-xl px-4 py-3 text-base font-semibold transition ${buttonClass}`}
+            className={`flex h-12 w-full items-center justify-center rounded-xl px-4 text-base font-semibold transition ${buttonClass}`}
           >
             {ctaLabel}
           </Link>

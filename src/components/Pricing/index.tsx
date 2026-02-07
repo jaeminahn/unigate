@@ -19,7 +19,6 @@ const Pricing = () => {
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2">
-          {/* Entry (1개월, 매우 저렴) */}
           <PricingBox
             badge="ENTRY"
             packageName="한국어 기초 1개월"
@@ -28,6 +27,7 @@ const Pricing = () => {
             ctaLabel="지금 바로 시작하기"
             ctaHref="/"
             ctaVariant="primary"
+            note="입문 과정은 본 사이트에서 바로 수강할 수 있습니다."
           >
             <OfferList text="한글·발음·받침 빠른 정리" status="active" />
             <OfferList text="기초 회화 패턴 & 필수 표현" status="active" />
@@ -36,7 +36,6 @@ const Pricing = () => {
             <OfferList text="전공 한국어/레포트 훈련" status="inactive" />
           </PricingBox>
 
-          {/* Semester Program (4학기) */}
           <PricingBox
             isFeatured
             badge="SEMESTER"
