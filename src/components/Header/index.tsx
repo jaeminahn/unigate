@@ -159,6 +159,7 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
+                {/*
                 <Link
                   href="/signin"
                   className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
@@ -171,6 +172,7 @@ const Header = () => {
                 >
                   Sign Up
                 </Link>
+                */}
                 <div>
                   <ThemeToggler />
                 </div>

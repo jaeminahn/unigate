@@ -13,12 +13,13 @@ export default function Video() {
       <section className="relative z-10 py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="편입학 맞춤형 커리큘럼"
+            paragraph="기초부터 심화 과정까지 단계별로 설계된 커리큘럼으로, 편입학 이후 학업 적응에 유리한 한국어 교육을 제공합니다. 아래 데모 영상에서 실제 강의 진행 방식을 확인해보세요."
             center
             mb="80px"
           />
         </div>
+
         <div className="relative overflow-hidden">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
@@ -26,15 +27,17 @@ export default function Video() {
                 <div className="relative aspect-77/40 items-center justify-center">
                   <Image
                     src="/images/video/image.png"
-                    alt="video image"
+                    alt="강의 데모 영상"
                     className="object-cover"
                     fill
+                    priority
                   />
+
                   <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
                     <button
-                      aria-label="video play button"
+                      aria-label="강의 데모 영상 재생"
                       onClick={() => setOpen(true)}
-                      className="text-primary flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/75 transition hover:bg-white cursor-pointer"
+                      className="text-primary flex h-[70px] w-[70px] cursor-pointer items-center justify-center rounded-full bg-white/75 transition hover:bg-white"
                     >
                       <svg
                         width="16"
@@ -51,10 +54,7 @@ export default function Video() {
             </div>
           </div>
 
-          <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat">
-            {/* <div className="absolute bottom-0 left-0 right-0 z-[-1] "> */}
-            {/* <img src="/images/video/shape.svg" alt="shape" className="w-full" /> */}
-          </div>
+          <div className="absolute right-0 bottom-0 left-0 z-[-1] h-full w-full bg-[url(/images/video/shape.svg)] bg-cover bg-center bg-no-repeat" />
         </div>
       </section>
 
@@ -66,4 +66,4 @@ export default function Video() {
       />
     </>
   );
-};
+}
