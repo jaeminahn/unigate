@@ -27,7 +27,7 @@ const AboutSectionTwo = () => {
                   mb="44px"
                 />
 
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
@@ -57,6 +57,22 @@ const AboutSectionTwo = () => {
                       전공·학점·이수 과목·서류 조합별 합격 사례를 모아
                       제공합니다. 감이 아니라 데이터로 지원 전략을 설계할 수
                       있습니다.
+                    </p>
+                  </div>
+
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg">
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
+                        일정 관리
+                      </span>
+                    </div>
+                    <p className="text-dark mb-2 text-base font-semibold">
+                      학교별 지원 일정 통합 관리
+                    </p>
+                    <p className="text-body-color text-sm leading-relaxed">
+                      마감일, 추천서 요청 시점, 성적표 발급·번역·업로드 일정까지
+                      하나의 타임라인으로 관리합니다. 중요한 날짜를 놓쳐 기회를
+                      잃는 일을 막습니다.
                     </p>
                   </div>
 

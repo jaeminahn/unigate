@@ -10,31 +10,31 @@ const menuData: Menu[] = [
   {
     id: 2,
     title: "회사 소개",
-    path: "/about",
+    path: "/",
     newTab: false,
   },
   {
     id: 3,
     title: "커리큘럼",
-    path: "/about",
+    path: "/",
     newTab: false,
   },
   {
     id: 4,
     title: "협약 기관",
-    path: "/about",
+    path: "/",
     newTab: false,
   },
   {
     id: 4,
     title: "블로그",
-    path: "/blog",
+    path: "/",
     newTab: false,
   },
   {
     id: 5,
     title: "문의",
-    path: "/contact",
+    path: "/",
     newTab: false,
   },
   /*

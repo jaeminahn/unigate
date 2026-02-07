@@ -38,6 +38,7 @@ const AboutSectionOne = () => {
                     이어지는 흐름을 기준으로 모든 교재를 직접 설계·제작합니다.
                   </>
                 }
+                center
                 mb="44px"
               />
 

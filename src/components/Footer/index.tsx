@@ -7,11 +7,11 @@ import { Instagram, Youtube, Linkedin, NotebookPen } from "lucide-react";
 const Footer = () => {
   const menu = [
     { title: "Home", href: "/" },
-    { title: "회사 소개", href: "/about" },
-    { title: "커리큘럼", href: "/#curriculum" },
-    { title: "협약 기관", href: "/#partners" },
-    { title: "블로그", href: "/blog" },
-    { title: "문의", href: "/contact" },
+    { title: "회사 소개", href: "/" },
+    { title: "커리큘럼", href: "/" },
+    { title: "협약 기관", href: "/" },
+    { title: "블로그", href: "/" },
+    { title: "문의", href: "/" },
   ];
 
   const social = [

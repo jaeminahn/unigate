@@ -10,7 +10,13 @@ const Pricing = () => {
       <div className="container">
         <SectionTitle
           title="수강 옵션"
-          paragraph="입문은 사이트에서 가볍게 시작하고, 정규 학기 과정은 협약 대학에서 진행됩니다."
+          paragraph={
+            <>
+              정규 학기 과정은 협약 대학에서 진행됩니다.
+              <br />
+              현재 인도네시아 수강생에 한하여 서비스를 제공합니다.
+            </>
+          }
           center
           width="665px"
         />
@@ -37,8 +43,15 @@ const Pricing = () => {
             isFeatured
             badge="SEMESTER"
             packageName="정규 학기 과정 (총 4학기)"
-            priceLabel="IDR 4.000.000+ / 학기"
-            subtitle="TOPIK 3–4급 + 전공 한국어까지 연결되는 4학기 커리큘럼"
+            priceLabel={
+              <>
+                IDR 4.000.000
+                <span className="ml-1 text-sm font-normal opacity-70">
+                  / 학기
+                </span>
+              </>
+            }
+            subtitle="TOPIK 3–4급 + 전공 한국어까지 연결되는 커리큘럼"
             ctaLabel="협약 대학 리스트 보기"
             ctaHref="/"
             ctaVariant="outline"

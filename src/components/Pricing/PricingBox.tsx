@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 const PricingBox = (props: {
   badge?: string;
   isFeatured?: boolean;
-  priceLabel: string;
+  priceLabel: ReactNode;
   packageName: string;
   subtitle: string;
   ctaLabel: string;
