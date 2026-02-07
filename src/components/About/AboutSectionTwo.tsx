@@ -1,57 +1,81 @@
-import Image from "next/image";
+import SectionTitle from "../Common/SectionTitle";
 
 const AboutSectionTwo = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-25/24 max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px]">
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div className="mb-9">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
-                </p>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Next.js
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
-                </p>
+        <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28">
+          <div className="-mx-4 flex flex-wrap items-start">
+            <div className="w-full px-4">
+              <div className="mx-auto max-w-[980px]">
+                <SectionTitle
+                  title={
+                    <>
+                      공부에만 집중하세요.
+                      <br />
+                      원스톱 편입학 컨설팅
+                    </>
+                  }
+                  paragraph={
+                    <>
+                      학교별 편입 요강 분석부터 서류 준비·제출 일정 관리까지
+                      <br />
+                      복잡한 과정을 한 흐름으로 정리해드립니다.
+                    </>
+                  }
+                  center
+                  mb="44px"
+                />
+
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
+                        입시 요강
+                      </span>
+                    </div>
+                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                      현지어 편입학 요강 제공
+                    </p>
+                    <p className="text-body-color text-sm leading-relaxed">
+                      학교별 지원 조건, 필수 서류, 마감 일정, 예외 규정을
+                      현지어로 정리해 제공합니다. 무엇을 언제까지 준비할지
+                      한눈에 보이게 만듭니다.
+                    </p>
+                  </div>
+
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
+                        사례 DB
+                      </span>
+                    </div>
+                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                      성공 사례 데이터베이스 제공
+                    </p>
+                    <p className="text-body-color text-sm leading-relaxed">
+                      전공·학점·이수 과목·서류 조합별 합격 사례를 모아
+                      제공합니다. 감이 아니라 데이터로 지원 전략을 설계할 수
+                      있습니다.
+                    </p>
+                  </div>
+
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                    <div className="mb-3 flex items-center justify-between">
+                      <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
+                        제출 지원
+                      </span>
+                    </div>
+                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                      서류 준비부터 제출까지 동행
+                    </p>
+                    <p className="text-body-color text-sm leading-relaxed">
+                      체크리스트 기반으로 서류 누락을 막고,
+                      포맷·번역·업로드·제출 흐름까지 지원합니다. 학생은 성적과
+                      학업에만 집중하면 됩니다.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
