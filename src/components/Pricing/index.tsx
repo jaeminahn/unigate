@@ -51,7 +51,7 @@ const Pricing = () => {
                 </span>
               </>
             }
-            subtitle="TOPIK 3–4급 + 전공 한국어까지 연결되는 커리큘럼"
+            subtitle="TOPIK II 준비부터 전공 한국어까지 연결되는 커리큘럼"
             ctaLabel="협약 대학 리스트 보기"
             ctaHref="/"
             ctaVariant="outline"

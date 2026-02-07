@@ -33,9 +33,9 @@ const AboutSectionOne = () => {
                 }
                 paragraph={
                   <>
-                    한글 입문부터 TOPIK II, 그리고 실제 대학 전공 수업까지
+                    한글 입문부터 TOPIK II, 그리고 전공 수업 대비까지
                     <br />
-                    이어지는 흐름을 기준으로 모든 교재를 직접 설계·제작합니다.
+                    모든 교재를 직접 설계·제작합니다.
                   </>
                 }
                 center

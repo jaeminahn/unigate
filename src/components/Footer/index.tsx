@@ -140,8 +140,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
-      <span className="bg-primary/10 pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full" />
     </footer>
   );
 };
