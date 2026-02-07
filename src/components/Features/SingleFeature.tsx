@@ -1,17 +1,33 @@
 import { Feature } from "@/types/feature";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
+const SingleFeature = ({
+  feature,
+  index,
+}: {
+  feature: Feature;
+  index: number;
+}) => {
+  const { title, paragraph } = feature;
+
   return (
-    <div className="w-full">
-      <div className="wow fadeInUp" data-wow-delay=".15s">
-        <div className="bg-primary/10 text-primary mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md">
-          {icon}
+    <div className="relative h-full">
+      <div className="flex h-full flex-col rounded-2xl border border-black/10 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-black">
+        {/* Header */}
+        <div className="mb-4 flex items-center justify-between">
+          <span className="text-xs font-semibold tracking-wide text-black/40 dark:text-white/40">
+            {`SEMESTER ${index + 1}`}
+          </span>
+
+          <span className="rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/60 dark:bg-white/10 dark:text-white/60">
+            {`STEP ${index + 1}`}
+          </span>
         </div>
-        <h3 className="mb-5 text-xl font-bold text-black sm:text-2xl lg:text-xl xl:text-2xl dark:text-white">
+
+        <h3 className="mb-3 text-lg font-bold text-black dark:text-white">
           {title}
         </h3>
-        <p className="text-body-color pr-[10px] text-base leading-relaxed font-medium">
+
+        <p className="flex-1 text-sm leading-relaxed text-black/60 dark:text-white/60">
           {paragraph}
         </p>
       </div>

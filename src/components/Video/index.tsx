@@ -14,7 +14,15 @@ export default function Video() {
         <div className="container">
           <SectionTitle
             title="편입학 맞춤형 커리큘럼"
-            paragraph="기초부터 심화 과정까지 단계별로 설계된 커리큘럼으로, 편입학 이후 학업 적응에 유리한 한국어 교육을 제공합니다. 아래 데모 영상에서 실제 강의 진행 방식을 확인해보세요."
+            paragraph={
+              <>
+                기초부터 심화 과정까지 단계별로 설계된 커리큘럼으로,
+                <br />
+                편입학 이후 학업 적응에 유리한 한국어 교육을 제공합니다.
+                <br />
+                아래 데모 영상에서 실제 강의 진행 방식을 확인해보세요.
+              </>
+            }
             center
             mb="80px"
           />

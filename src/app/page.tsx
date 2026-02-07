@@ -12,8 +12,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "UNIGATE - 체계적인 한국 편입학 준비",
+  description: "한국 대학 편입학을 위한 온라인 한국어 교육",
   // other metadata
 };
 
@@ -22,9 +22,9 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
+      <Brands />
       <Features />
       <Video />
-      <Brands />
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />

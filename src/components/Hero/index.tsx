@@ -6,14 +6,15 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden bg-white pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+        className="relative z-10 overflow-hidden bg-white pt-[120px] pb-16 md:pt-[150px] md:pb-[60px] xl:pt-[180px] xl:pb-[80px] 2xl:pt-[210px] 2xl:pb-[100px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-2xl leading-tight font-bold text-black sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight">
-                  편입학 이후까지 책임지는 온라인 한국어 교육
+                <h1 className="mb-5 text-2xl leading-tight font-bold text-black sm:text-3xl md:text-4xl">
+                  편입학 이후까지 책임지는 <br className="block lg:hidden" />
+                  온라인 한국어 교육
                 </h1>
                 <p className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl">
                   협약 대학 재학생을 대상으로 한국 대학 편입학을 대비한
@@ -31,8 +32,8 @@ const Hero = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xs bg-black px-8 py-4 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    <ExternalLink className="h-5 w-5" />
                     LMS 바로가기
+                    <ExternalLink className="h-5 w-5" />
                   </Link>
                 </div>
               </div>
