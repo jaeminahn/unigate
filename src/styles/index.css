@@ -2,8 +2,6 @@
 
 @import "tailwindcss";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme {
   --breakpoint-*: initial;
   --breakpoint-xs: 450px;
@@ -130,5 +128,20 @@
 @layer components {
   input[type="checkbox"]:checked ~ label span svg {
     @apply inline-flex;
+  }
+}
+
+@layer utilities {
+  @keyframes brand-marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee-motion {
+    animation: brand-marquee 22s linear infinite;
   }
 }
