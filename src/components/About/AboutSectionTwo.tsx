@@ -2,9 +2,9 @@ import SectionTitle from "../Common/SectionTitle";
 
 const AboutSectionTwo = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section className="py-16">
       <div className="container">
-        <div className="border-body-color/[.15] border-b pb-16 md:pb-20 lg:pb-28">
+        <div className="border-body-color/[.15] border-b pb-16 md:pb-10 lg:pb-14">
           <div className="-mx-4 flex flex-wrap items-start">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[980px]">
@@ -28,13 +28,13 @@ const AboutSectionTwo = () => {
                 />
 
                 <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
                         입시 요강
                       </span>
                     </div>
-                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                    <p className="text-dark mb-2 text-base font-semibold">
                       현지어 편입학 요강 제공
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
@@ -44,13 +44,13 @@ const AboutSectionTwo = () => {
                     </p>
                   </div>
 
-                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
                         사례 DB
                       </span>
                     </div>
-                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                    <p className="text-dark mb-2 text-base font-semibold">
                       성공 사례 데이터베이스 제공
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
@@ -60,13 +60,13 @@ const AboutSectionTwo = () => {
                     </p>
                   </div>
 
-                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+                  <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
                         제출 지원
                       </span>
                     </div>
-                    <p className="text-dark mb-2 text-base font-semibold dark:text-white">
+                    <p className="text-dark mb-2 text-base font-semibold">
                       서류 준비부터 제출까지 동행
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">

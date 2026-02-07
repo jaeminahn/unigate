@@ -27,7 +27,6 @@ export default function Home() {
       <Video />
       <AboutSectionOne />
       <AboutSectionTwo />
-      <Testimonials />
       <Pricing />
       <Blog />
       <Contact />

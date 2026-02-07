@@ -61,10 +61,10 @@ const testimonialData: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="relative py-16 md:py-20 lg:py-28">
+    <section className="relative py-16 md:pb-10 lg:pb-14">
       <div className="container">
         <SectionTitle
-          title="수강생 후기"
+          title="실제 수강생 후기"
           paragraph={
             <>
               입문부터 TOPIK II, 그리고 전공 수업 대비까지
