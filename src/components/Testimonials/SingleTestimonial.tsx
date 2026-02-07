@@ -1,39 +1,35 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
-const starIcon = (
-  <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
-    <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
-  </svg>
-);
+import { Star } from "lucide-react";
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   const { star, name, image, content, designation } = testimonial;
 
-  let ratingIcons = [];
-  for (let index = 0; index < star; index++) {
-    ratingIcons.push(
-      <span key={index} className="text-yellow">
-        {starIcon}
-      </span>,
-    );
-  }
-
   return (
     <div className="w-full">
-      <div className="shadow-two hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark rounded-xs bg-white p-8 duration-300 lg:px-5 xl:px-8">
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="border-body-color/10 text-body-color mb-8 border-b pb-8 text-base leading-relaxed dark:border-white/10 dark:text-white">
-          “{content}
+      <div className="group border-body-color/[.15] flex h-full flex-col rounded-2xl border bg-white/60 p-6 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
+        <div className="mb-4 flex items-center gap-1">
+          {Array.from({ length: star }).map((_, i) => (
+            <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+          ))}
+        </div>
+
+        <p className="text-body-color flex-1 text-sm leading-relaxed">
+          “{content}”
         </p>
+
+        <div className="my-5 h-px w-full bg-black/10 dark:bg-white/10" />
+
         <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <Image src={image} alt={name} fill />
+          <div className="relative mr-4 h-[44px] w-[44px] overflow-hidden rounded-full border border-black/10 dark:border-white/10">
+            <Image src={image} alt={name} fill className="object-cover" />
           </div>
+
           <div className="w-full">
-            <h3 className="text-dark mb-1 text-lg font-semibold lg:text-base xl:text-lg dark:text-white">
+            <h3 className="text-dark text-base font-semibold dark:text-white">
               {name}
             </h3>
-            <p className="text-body-color text-sm">{designation}</p>
+            <p className="text-body-color text-xs font-medium">{designation}</p>
           </div>
         </div>
       </div>
