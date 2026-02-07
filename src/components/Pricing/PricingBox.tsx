@@ -1,77 +1,88 @@
+import Link from "next/link";
+
 const PricingBox = (props: {
-  price: string;
-  duration: string;
+  badge?: string;
+  isFeatured?: boolean;
+  priceLabel: string;
   packageName: string;
   subtitle: string;
+  ctaLabel: string;
+  ctaHref: string;
+  ctaVariant?: "primary" | "outline" | "ghost";
+  note?: string;
   children: React.ReactNode;
 }) => {
-  const { price, duration, packageName, subtitle, children } = props;
+  const {
+    badge,
+    isFeatured,
+    priceLabel,
+    packageName,
+    subtitle,
+    ctaLabel,
+    ctaHref,
+    ctaVariant = "primary",
+    note,
+    children,
+  } = props;
+
+  const buttonClass =
+    ctaVariant === "outline"
+      ? "border border-black/10 bg-transparent text-black hover:bg-black/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10"
+      : ctaVariant === "ghost"
+        ? "bg-black/5 text-black hover:bg-black/10 dark:bg-white/10 dark:text-white dark:hover:bg-white/15"
+        : "bg-primary text-white hover:opacity-90";
 
   return (
     <div className="w-full">
-      <div className="shadow-three hover:shadow-one dark:bg-gray-dark dark:shadow-two dark:hover:shadow-gray-dark relative z-10 rounded-xs bg-white px-8 py-10">
-        <div className="flex items-center justify-between">
-          <h3 className="price mb-2 text-[32px] font-bold text-black dark:text-white">
-            $<span className="amount">{price}</span>
-            <span className="time text-body-color text-lg font-medium">
-              /{duration}
+      <div
+        className={`relative flex h-full flex-col rounded-2xl border bg-white px-8 py-10 shadow-sm transition dark:bg-black ${
+          isFeatured
+            ? "border-primary/30"
+            : "border-black/10 dark:border-white/10"
+        }`}
+      >
+        {badge ? (
+          <div className="mb-5 flex items-center justify-between">
+            <span className="rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/60 dark:bg-white/10 dark:text-white/60">
+              {badge}
             </span>
-          </h3>
-          <h4 className="text-dark mb-2 text-xl font-bold dark:text-white">
+            {isFeatured ? (
+              <span className="text-primary text-xs font-semibold">
+                Recommended
+              </span>
+            ) : null}
+          </div>
+        ) : null}
+
+        <div className="mb-3">
+          <h4 className="text-xl font-bold text-black dark:text-white">
             {packageName}
           </h4>
         </div>
+
+        <div className="mb-4">
+          <div className="text-[28px] font-bold text-black dark:text-white">
+            {priceLabel}
+          </div>
+          {note ? (
+            <p className="mt-2 text-sm font-medium text-black/50 dark:text-white/50">
+              {note}
+            </p>
+          ) : null}
+        </div>
+
         <p className="text-body-color mb-7 text-base">{subtitle}</p>
+
         <div className="border-body-color/10 mb-8 border-b pb-8 dark:border-white/10">
-          <button className="bg-primary/80 hover:shadow-signUp flex w-full items-center justify-center rounded-xs p-3 text-base font-semibold text-white transition duration-300 ease-in-out">
-            Start Free Trial
-          </button>
-        </div>
-        <div>{children}</div>
-        <div className="absolute right-0 bottom-0 z-[-1]">
-          <svg
-            width="179"
-            height="158"
-            viewBox="0 0 179 158"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <Link
+            href={ctaHref}
+            className={`flex w-full items-center justify-center rounded-xl px-4 py-3 text-base font-semibold transition ${buttonClass}`}
           >
-            <path
-              opacity="0.5"
-              d="M75.0002 63.256C115.229 82.3657 136.011 137.496 141.374 162.673C150.063 203.47 207.217 197.755 202.419 167.738C195.393 123.781 137.273 90.3579 75.0002 63.256Z"
-              fill="url(#paint0_linear_70:153)"
-            />
-            <path
-              opacity="0.3"
-              d="M178.255 0.150879C129.388 56.5969 134.648 155.224 143.387 197.482C157.547 265.958 65.9705 295.709 53.1024 246.401C34.2588 174.197 100.939 83.7223 178.255 0.150879Z"
-              fill="url(#paint1_linear_70:153)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_70:153"
-                x1="69.6694"
-                y1="29.9033"
-                x2="196.108"
-                y2="83.2919"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_70:153"
-                x1="165.348"
-                y1="-75.4466"
-                x2="-3.75136"
-                y2="103.645"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#4A6CF7" stopOpacity="0.62" />
-                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
+            {ctaLabel}
+          </Link>
         </div>
+
+        <div className="mt-auto">{children}</div>
       </div>
     </div>
   );

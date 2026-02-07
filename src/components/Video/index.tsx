@@ -70,7 +70,7 @@ export default function Video() {
         isOpen={isOpen}
         onClose={() => setOpen(false)}
         channel="youtube"
-        videoId="L61p2uyiMSo"
+        videoId="QFH0wre7tpM"
       />
     </>
   );
