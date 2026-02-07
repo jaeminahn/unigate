@@ -135,6 +135,7 @@ const Footer = () => {
           <p className="text-body-color text-center text-xs font-medium">
             © {new Date().getFullYear()} UNIGATE. All rights reserved.{" "}
             <span className="text-body-color/70">
+              <br className="block lg:hidden" />
               교재·콘텐츠 및 사이트 내 모든 자료의 무단 복제·배포를 금합니다.
             </span>
           </p>
