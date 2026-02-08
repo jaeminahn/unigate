@@ -6,7 +6,7 @@ const NewsLatterBox = () => {
       </h3>
 
       <p className="border-body-color/25 text-body-color mb-8 text-sm leading-relaxed">
-        한국 대학 편입을 준비하는 외국인 학생을 위한 요강 해설, 전형 변화, 대학
+        한국 대학 편입학을 준비하는 외국인 학생을 위한 요강 해설, 전형 변화, 대학
         추천, 실전 팁을 정리해 이메일로 전해드립니다.
       </p>
 

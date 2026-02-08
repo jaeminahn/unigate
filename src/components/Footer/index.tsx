@@ -41,7 +41,7 @@ const Footer = () => {
               <p className="text-body-color mb-6 text-sm leading-relaxed">
                 한국 대학 편입학을 준비하는 외국인 학생을 위한
                 <br />
-                한국어 교육 &amp; 원스톱 편입 컨설팅 서비스를 제공합니다.
+                한국어 교육 &amp; 원스톱 편입학 컨설팅 서비스를 제공합니다.
               </p>
 
               <div className="flex items-center gap-4">
