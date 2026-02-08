@@ -45,7 +45,7 @@ const Pricing = () => {
             packageName="정규 학기 과정 (총 4학기)"
             priceLabel={
               <>
-                IDR 4.000.000
+                IDR 5.000.000
                 <span className="ml-1 text-sm font-normal opacity-70">
                   / 학기
                 </span>

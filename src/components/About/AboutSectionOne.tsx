@@ -158,7 +158,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-25/24 max-w-[500px] lg:mr-0">
                 <Image
-                  src="/images/about/textbook.jpg"
+                  src="/images/about/textbook.png"
                   alt="교재 미리보기"
                   fill
                   className="drop-shadow-three mx-auto max-w-full lg:mr-0"
