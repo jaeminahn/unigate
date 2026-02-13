@@ -33,7 +33,7 @@ const Footer = () => {
                   alt="logo"
                   width={140}
                   height={30}
-                  className="h-auto w-auto"
+                  className="h-[30px] w-auto"
                   priority
                 />
               </Link>

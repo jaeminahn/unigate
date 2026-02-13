@@ -16,7 +16,12 @@
   --color-white: #ffffff;
   --color-black: #121723;
   --color-dark: #1d2430;
-  --color-primary: #4a6cf7;
+
+  --color-primary: #155fcc;
+  --color-primary-dark: #0b3084;
+  --color-primary-soft: #a2b6dd;
+  --color-primary-foreground: #ffffff;
+
   --color-yellow: #fbb040;
   --color-bg-color-dark: #171c28;
 
@@ -46,7 +51,9 @@
   --shadow-three: 0px 5px 15px rgba(6, 8, 15, 0.05);
   --shadow-sticky: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
   --shadow-sticky-dark: inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
-  --shadow-feature-2: 0px 10px 40px rgba(48, 86, 211, 0.12);
+
+  --shadow-feature-2: 0px 10px 40px rgba(21, 95, 204, 0.18);
+
   --shadow-submit: 0px 5px 20px rgba(4, 10, 34, 0.1);
   --shadow-submit-dark: 0px 5px 20px rgba(4, 10, 34, 0.1);
   --shadow-btn: 0px 1px 2px rgba(4, 10, 34, 0.15);
@@ -82,6 +89,10 @@
       "Apple SD Gothic Neo",
       "Malgun Gothic",
       sans-serif;
+  }
+
+  a {
+    color: inherit;
   }
 }
 
