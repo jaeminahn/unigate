@@ -33,9 +33,9 @@ const AboutSectionOne = () => {
                 }
                 paragraph={
                   <>
-                    한글 입문부터 TOPIK II, 그리고 전공 수업 대비까지
+                    기초 교재 및 전공 적응 교재를 직접 제작합니다.
                     <br />
-                    모든 교재를 직접 설계·제작합니다.
+                    TOPIK은 검증된 외부 교재와 해설 노트를 바탕으로 강의합니다.
                   </>
                 }
                 center
@@ -47,7 +47,7 @@ const AboutSectionOne = () => {
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
-                        한글 입문 ①
+                        기초 교재 ①
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
                         Foundations
@@ -65,7 +65,7 @@ const AboutSectionOne = () => {
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
-                        한글 입문 ②
+                        기초 교재 ②
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
                         Foundations
@@ -75,15 +75,15 @@ const AboutSectionOne = () => {
                       가나다 한국어 2
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
-                      기본 문장 구조와 필수 문형을 단계적으로 누적 학습합니다.
-                      TOPIK II 대비를 위한 읽기·듣기 기본기를 다집니다.
+                      기본 문장 구조와 필수 문형을 누적 학습합니다. 듣기·읽기
+                      기본기를 다져 TOPIK II 대비로 자연스럽게 연결합니다.
                     </p>
                   </div>
 
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
-                        기본 단어장
+                        보조 교재
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
                         Vocabulary
@@ -93,8 +93,8 @@ const AboutSectionOne = () => {
                       코어 어휘북
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
-                      일상·학습 필수 어휘를 빈출 기준으로 압축했습니다. 예문과
-                      연어 중심이라 바로 문장으로 확장됩니다.
+                      일상·학습 필수 어휘를 빈출 기준으로 정리했습니다. 예문
+                      중심 구성이라 바로 문장으로 확장됩니다.
                     </p>
                   </div>
 
@@ -104,40 +104,40 @@ const AboutSectionOne = () => {
                         TOPIK II
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
-                        Listening · Reading
+                        Notes
                       </span>
                     </div>
                     <p className="text-dark mb-2 text-base font-semibold dark:text-white">
-                      패턴으로 배우는 TOPIK II
+                      TOPIK II 해설 노트
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
-                      유형별 풀이 루틴을 먼저 만들고 반복 훈련합니다. 함정
-                      포인트와 시간 배분까지 시험 운영 관점으로 설계했습니다.
+                      외부 교재의 핵심만 인니어로 정리합니다. 유형별 풀이
+                      루틴·함정 포인트·시간 배분까지 한 번에 잡습니다.
                     </p>
                   </div>
 
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
-                        쓰기 노트
+                        TOPIK II
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
-                        Writing
+                        Writing Notes
                       </span>
                     </div>
                     <p className="text-dark mb-2 text-base font-semibold dark:text-white">
-                      주제별 문장 만들기
+                      TOPIK II 쓰기 노트
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
-                      연결어미·전개 템플릿·표현을 ‘조립’ 방식으로 익힙니다.
-                      TOPIK 쓰기부터 에세이까지 확장 가능합니다.
+                      유형별 답안 구조와 문단 전개를 템플릿으로 제공합니다. 예시
+                      답안과 표현 확장으로 4급 수준 쓰기를 목표로 합니다.
                     </p>
                   </div>
 
                   <div className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5">
                     <div className="mb-3 flex items-center justify-between">
                       <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
-                        전공 대비
+                        전공 적응
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
                         Academic
@@ -147,8 +147,9 @@ const AboutSectionOne = () => {
                       캠퍼스 브릿지
                     </p>
                     <p className="text-body-color text-sm leading-relaxed">
-                      강의식 듣기·노트·요약·레포트를 실제 과제 기준으로
-                      훈련합니다. 주제별 전공 어휘는 부록으로 제공합니다.
+                      전공별 핵심 어휘·표현과 학업 글쓰기를 훈련합니다.
+                      과제·리포트·이메일 등 대학 과제 형식까지 실전으로
+                      연결합니다.
                     </p>
                   </div>
                 </div>
