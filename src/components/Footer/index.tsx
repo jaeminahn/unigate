@@ -10,15 +10,18 @@ const Footer = () => {
     { title: "회사 소개", href: "/" },
     { title: "커리큘럼", href: "/" },
     { title: "협약 기관", href: "/" },
-    { title: "블로그", href: "/" },
-    { title: "문의", href: "/" },
+    { title: "문의", href: "/contact" },
   ];
 
   const social = [
     { label: "Instagram", href: "/", icon: Instagram },
     { label: "Naver Blog", href: "/", icon: NotebookPen },
     { label: "YouTube", href: "/", icon: Youtube },
-    { label: "LinkedIn", href: "/", icon: Linkedin },
+    {
+      label: "LinkedIn",
+      href: "https://linkedin.com/company/unigatekr",
+      icon: Linkedin,
+    },
   ];
 
   return (

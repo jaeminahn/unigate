@@ -104,7 +104,7 @@ const AboutSectionOne = () => {
                         TOPIK II
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
-                        Notes
+                        Extras
                       </span>
                     </div>
                     <p className="text-dark mb-2 text-base font-semibold dark:text-white">
@@ -122,7 +122,7 @@ const AboutSectionOne = () => {
                         TOPIK II
                       </span>
                       <span className="text-body-color/60 text-xs font-medium">
-                        Writing Notes
+                        Extras
                       </span>
                     </div>
                     <p className="text-dark mb-2 text-base font-semibold dark:text-white">
@@ -159,7 +159,7 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="relative mx-auto aspect-25/24 max-w-[600px] lg:mr-0">
                 <Image
-                  src="/images/about/textbook.png"
+                  src="/images/about/textbook.jpg"
                   alt="교재 미리보기"
                   fill
                   className="drop-shadow-three object-contain"

@@ -26,15 +26,9 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id: 4,
-    title: "블로그",
-    path: "/",
-    newTab: false,
-  },
-  {
     id: 5,
     title: "문의",
-    path: "/",
+    path: "/contact",
     newTab: false,
   },
   /*

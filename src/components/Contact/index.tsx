@@ -1,10 +1,8 @@
-import NewsLatterBox from "./NewsLatterBox";
-
 const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap items-start">
+        <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
               className="border-body-color/[.15] mb-12 rounded-2xl border bg-white/60 p-8 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-[55px] lg:mb-5 lg:p-8 xl:p-[55px]"
@@ -65,7 +63,7 @@ const Contact = () => {
                       <input
                         id="target"
                         type="text"
-                        placeholder="예: 경영학 / 수도권 대학"
+                        placeholder="예: 수도권 대학 / 경영학"
                         className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
                       />
                     </div>
@@ -107,20 +105,18 @@ const Contact = () => {
                   </div>
 
                   <div className="w-full px-4">
-                    <button
-                      type="submit"
-                      className="bg-primary hover:bg-primary/90 rounded-2xl px-9 py-4 text-base font-semibold text-white transition"
-                    >
-                      상담 신청하기
-                    </button>
+                    <div className="flex justify-center">
+                      <button
+                        type="submit"
+                        className="bg-primary hover:bg-primary/90 rounded-2xl px-9 py-4 text-base font-semibold text-white transition"
+                      >
+                        상담 신청하기
+                      </button>
+                    </div>
                   </div>
                 </div>
               </form>
             </div>
-          </div>
-
-          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <NewsLatterBox />
           </div>
         </div>
       </div>
