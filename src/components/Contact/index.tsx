@@ -4,10 +4,7 @@ const Contact = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div
-              className="border-body-color/[.15] mb-12 rounded-2xl border bg-white/60 p-8 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-[55px] lg:mb-5 lg:p-8 xl:p-[55px]"
-              data-wow-delay=".15s"
-            >
+            <div className="border-body-color/[.15] mb-12 rounded-2xl border bg-white/60 p-8 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-[55px] lg:mb-5 lg:p-8 xl:p-[55px]">
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
                 상담 신청
               </h2>
@@ -16,7 +13,7 @@ const Contact = () => {
                 이메일로 빠르게 안내드리겠습니다.
               </p>
 
-              <form>
+              <form action="https://formspree.io/f/meelzwyb" method="POST">
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-6">
@@ -28,8 +25,10 @@ const Contact = () => {
                       </label>
                       <input
                         id="name"
+                        name="name"
                         type="text"
                         placeholder="이름을 입력해주세요"
+                        required
                         className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
                       />
                     </div>
@@ -45,8 +44,10 @@ const Contact = () => {
                       </label>
                       <input
                         id="email"
+                        name="email"
                         type="email"
                         placeholder="이메일을 입력해주세요"
+                        required
                         className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
                       />
                     </div>
@@ -62,6 +63,7 @@ const Contact = () => {
                       </label>
                       <input
                         id="target"
+                        name="target"
                         type="text"
                         placeholder="예: 수도권 대학 / 경영학"
                         className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
@@ -79,6 +81,7 @@ const Contact = () => {
                       </label>
                       <input
                         id="timeline"
+                        name="timeline"
                         type="text"
                         placeholder="예: 2026년 9월 지원"
                         className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
@@ -99,10 +102,17 @@ const Contact = () => {
                         name="message"
                         rows={6}
                         placeholder="현재 상황(학력/학점/한국어 수준)과 궁금한 점을 간단히 적어주세요."
+                        required
                         className="border-body-color/[.15] focus:border-primary w-full resize-none rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
                       />
                     </div>
                   </div>
+
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="상담 신청 이메일"
+                  />
 
                   <div className="w-full px-4">
                     <div className="flex justify-center">
