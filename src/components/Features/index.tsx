@@ -13,8 +13,7 @@ const Features = () => {
           title="4학기 커리큘럼 로드맵"
           paragraph={
             <>
-              기초부터 실전·성과까지 이어지는 <br className="block lg:hidden" />
-              단계형 한국어 교육 과정입니다.
+              기초부터 실전·성과까지 이어지는 단계형 한국어 교육 과정입니다.
             </>
           }
           center

@@ -42,9 +42,8 @@ const Footer = () => {
               </Link>
 
               <p className="text-body-color mb-6 text-sm leading-relaxed">
-                국내 유일 성공적인 편입학을 위한
-                <br />
-                AI 기반 전공 맞춤 한국어 교육을 제공합니다.
+                국내 유일 성공적인 편입학을 위한 AI 기반 전공 맞춤 한국어
+                교육을 제공합니다.
               </p>
 
               <div className="flex items-center gap-4">

@@ -9,8 +9,7 @@ const Contact = () => {
                 상담 신청
               </h2>
               <p className="text-body-color mb-12 text-base font-medium">
-                아래에 정보를 남겨주시면 <br className="block lg:hidden" />
-                이메일로 빠르게 안내드리겠습니다.
+                아래에 정보를 남겨주시면 이메일로 빠르게 안내드리겠습니다.
               </p>
 
               <form action="https://formspree.io/f/meelzwyb" method="POST">
