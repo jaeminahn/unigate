@@ -1,7 +1,12 @@
+"use client";
+
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Hero = () => {
+  const t = useTranslation();
+
   return (
     <>
       <section
@@ -13,11 +18,10 @@ const Hero = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
                 <h1 className="mb-5 text-xl leading-tight font-bold text-black xs:text-2xl sm:text-3xl md:text-4xl">
-                  국내 유일 성공적인 편입학을 위한 AI 기반 전공 맞춤 한국어 교육
+                  {t.hero.title}
                 </h1>
                 <p className="text-body-color dark:text-body-color-dark mb-12 text-base leading-relaxed! sm:text-lg md:text-xl">
-                  인도네시아 전문대학의 학위과정과 연계하여 유학생의 한국 대학
-                  편입학을 대비한 온라인 한국어 교육 서비스를 제공합니다.
+                  {t.hero.subtitle}
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
                   <Link
@@ -26,7 +30,7 @@ const Hero = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xs bg-black px-8 py-4 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    LMS 바로가기
+                    {t.hero.cta}
                     <ExternalLink className="h-5 w-5" />
                   </Link>
                 </div>

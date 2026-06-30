@@ -3,14 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, Linkedin, NotebookPen } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Footer = () => {
+  const t = useTranslation();
+
   const menu = [
-    { title: "Home", href: "/" },
-    { title: "회사 소개", href: "/" },
-    { title: "커리큘럼", href: "/" },
-    { title: "협약 기관", href: "/" },
-    { title: "문의", href: "/contact" },
+    { title: t.nav.home, href: "/" },
+    { title: t.nav.about, href: "/" },
+    { title: t.nav.curriculum, href: "/" },
+    { title: t.nav.partners, href: "/" },
+    { title: t.nav.contact, href: "/contact" },
   ];
 
   const social = [
@@ -42,8 +45,7 @@ const Footer = () => {
               </Link>
 
               <p className="text-body-color mb-6 text-sm leading-relaxed">
-                국내 유일 성공적인 편입학을 위한 AI 기반 전공 맞춤 한국어
-                교육을 제공합니다.
+                {t.footer.tagline}
               </p>
 
               <div className="flex items-center gap-4">
@@ -64,7 +66,9 @@ const Footer = () => {
           </div>
 
           <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <h2 className="mb-5 text-base font-bold text-black">메뉴</h2>
+            <h2 className="mb-5 text-base font-bold text-black">
+              {t.footer.menuTitle}
+            </h2>
             <ul className="space-y-3">
               {menu.map((item) => (
                 <li key={item.title}>
@@ -80,14 +84,16 @@ const Footer = () => {
           </div>
 
           <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-            <h2 className="mb-5 text-base font-bold text-black">정책</h2>
+            <h2 className="mb-5 text-base font-bold text-black">
+              {t.footer.policyTitle}
+            </h2>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/terms"
                   className="text-body-color hover:text-primary text-sm transition"
                 >
-                  이용약관
+                  {t.footer.terms}
                 </Link>
               </li>
               <li>
@@ -95,7 +101,7 @@ const Footer = () => {
                   href="/privacy"
                   className="text-body-color hover:text-primary text-sm transition"
                 >
-                  개인정보처리방침
+                  {t.footer.privacy}
                 </Link>
               </li>
               <li>
@@ -103,7 +109,7 @@ const Footer = () => {
                   href="/refund"
                   className="text-body-color hover:text-primary text-sm transition"
                 >
-                  환불 규정
+                  {t.footer.refund}
                 </Link>
               </li>
             </ul>
@@ -111,10 +117,12 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="w-full px-4 lg:w-3/12">
-            <h2 className="mb-5 text-base font-bold text-black">문의</h2>
+            <h2 className="mb-5 text-base font-bold text-black">
+              {t.footer.contactTitle}
+            </h2>
             <ul className="space-y-3">
               <li className="text-body-color text-sm">
-                이메일: contact@unigate.kr
+                {t.footer.emailLabel}: contact@unigate.kr
               </li>
             </ul>
           </div>
@@ -127,7 +135,7 @@ const Footer = () => {
             © {new Date().getFullYear()} UNIGATE. All rights reserved.{" "}
             <span className="text-body-color/70">
               <br className="block lg:hidden" />
-              교재·콘텐츠 및 사이트 내 모든 자료의 무단 복제·배포를 금합니다.
+              {t.footer.copyright}
             </span>
           </p>
         </div>

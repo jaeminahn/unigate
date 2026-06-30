@@ -11,6 +11,7 @@ const PricingBox = (props: {
   ctaHref: string;
   ctaVariant?: "primary" | "outline" | "ghost";
   note?: string;
+  recommendedLabel?: string;
   children: React.ReactNode;
 }) => {
   const {
@@ -23,6 +24,7 @@ const PricingBox = (props: {
     ctaHref,
     ctaVariant = "primary",
     note,
+    recommendedLabel,
     children,
   } = props;
 
@@ -49,9 +51,9 @@ const PricingBox = (props: {
             <span className="rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/60">
               {badge}
             </span>
-            {isFeatured ? (
+            {isFeatured && recommendedLabel ? (
               <span className="text-primary text-xs font-semibold">
-                Recommended
+                {recommendedLabel}
               </span>
             ) : null}
           </div>

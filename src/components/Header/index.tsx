@@ -3,7 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import menuData from "./menuData";
+import { getMenuData } from "./menuData";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Header = () => {
   // Navbar toggle
@@ -36,6 +38,8 @@ const Header = () => {
   };
 
   const usePathName = usePathname();
+  const t = useTranslation();
+  const menuData = getMenuData(t);
 
   return (
     <>
@@ -103,6 +107,9 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
+                  <div className="mb-4 px-0 lg:hidden">
+                    <LanguageSwitcher />
+                  </div>
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
@@ -156,6 +163,9 @@ const Header = () => {
                     ))}
                   </ul>
                 </nav>
+              </div>
+              <div className="hidden items-center gap-4 lg:flex">
+                <LanguageSwitcher />
               </div>
             </div>
           </div>
