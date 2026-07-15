@@ -118,7 +118,7 @@ export const translations = {
       semester: {
         badge: "SEMESTER",
         packageName: "Kursus Semester Reguler (Total 4 Semester)",
-        priceLabel: "IDR 5.000.000",
+        priceLabel: "IDR 3.000.000",
         priceUnit: "/ semester",
         subtitle:
           "Kurikulum yang menghubungkan persiapan TOPIK II hingga bahasa Korea jurusan",
@@ -291,7 +291,7 @@ export const translations = {
       semester: {
         badge: "SEMESTER",
         packageName: "정규 학기 과정 (총 4학기)",
-        priceLabel: "IDR 5.000.000",
+        priceLabel: "IDR 3.000.000",
         priceUnit: "/ 학기",
         subtitle:
           "TOPIK II 준비부터 전공 한국어까지 연결되는 커리큘럼",
