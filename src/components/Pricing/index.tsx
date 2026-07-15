@@ -13,10 +13,11 @@ const Pricing = () => {
   return (
     <section
       id="pricing"
-      className="relative z-10 pt-10 pb-10 md:pt-12 md:pb-12 lg:pt-16 lg:pb-14"
+      className="relative z-10 py-16 md:py-20 lg:py-28"
     >
       <div className="container">
         <SectionTitle
+          eyebrow={t.pricing.eyebrow}
           title={t.pricing.title}
           paragraph={<>{t.pricing.paragraph}</>}
           center
@@ -54,7 +55,7 @@ const Pricing = () => {
             subtitle={semester.subtitle}
             ctaLabel={semester.cta}
             ctaHref="/"
-            ctaVariant="outline"
+            ctaVariant="primary"
             note={semester.note}
             recommendedLabel={semester.recommended}
           >

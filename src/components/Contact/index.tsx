@@ -11,7 +11,10 @@ const Contact = () => {
       <div className="container">
         <div className="-mx-4 flex flex-wrap justify-center">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div className="border-body-color/[.15] mb-12 rounded-2xl border bg-white/60 p-8 transition hover:-translate-y-0.5 hover:shadow-lg sm:p-[55px] lg:mb-5 lg:p-8 xl:p-[55px]">
+            <div className="mb-12 rounded-2xl border border-black/10 bg-white p-8 shadow-sm sm:p-[55px] lg:mb-5 lg:p-8 xl:p-[55px]">
+              <span className="mb-3 inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold tracking-wide text-primary uppercase">
+                {t.contact.eyebrow}
+              </span>
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl">
                 {t.contact.title}
               </h2>
@@ -35,7 +38,7 @@ const Contact = () => {
                         type="text"
                         placeholder={form.namePlaceholder}
                         required
-                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
+                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-gray-50 px-5 py-3 text-sm text-black transition placeholder:text-black/40 focus:bg-white focus:ring-2 focus:ring-primary/30"
                       />
                     </div>
                   </div>
@@ -54,7 +57,7 @@ const Contact = () => {
                         type="email"
                         placeholder={form.emailPlaceholder}
                         required
-                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
+                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-gray-50 px-5 py-3 text-sm text-black transition placeholder:text-black/40 focus:bg-white focus:ring-2 focus:ring-primary/30"
                       />
                     </div>
                   </div>
@@ -72,7 +75,7 @@ const Contact = () => {
                         name="target"
                         type="text"
                         placeholder={form.targetPlaceholder}
-                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
+                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-gray-50 px-5 py-3 text-sm text-black transition placeholder:text-black/40 focus:bg-white focus:ring-2 focus:ring-primary/30"
                       />
                     </div>
                   </div>
@@ -90,7 +93,7 @@ const Contact = () => {
                         name="timeline"
                         type="text"
                         placeholder={form.timelinePlaceholder}
-                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
+                        className="border-body-color/[.15] focus:border-primary w-full rounded-2xl border bg-gray-50 px-5 py-3 text-sm text-black transition placeholder:text-black/40 focus:bg-white focus:ring-2 focus:ring-primary/30"
                       />
                     </div>
                   </div>
@@ -109,7 +112,7 @@ const Contact = () => {
                         rows={6}
                         placeholder={form.messagePlaceholder}
                         required
-                        className="border-body-color/[.15] focus:border-primary w-full resize-none rounded-2xl border bg-white/70 px-5 py-3 text-sm text-black outline-hidden transition placeholder:text-black/40"
+                        className="border-body-color/[.15] focus:border-primary w-full resize-none rounded-2xl border bg-gray-50 px-5 py-3 text-sm text-black transition placeholder:text-black/40 focus:bg-white focus:ring-2 focus:ring-primary/30"
                       />
                     </div>
                   </div>
@@ -124,7 +127,7 @@ const Contact = () => {
                     <div className="flex justify-center">
                       <button
                         type="submit"
-                        className="bg-primary hover:bg-primary/90 rounded-2xl px-9 py-4 text-base font-semibold text-white transition"
+                        className="bg-primary hover:bg-primary-dark rounded-2xl px-9 py-4 text-base font-semibold text-white shadow-lg shadow-primary/20 transition"
                       >
                         {form.submit}
                       </button>
