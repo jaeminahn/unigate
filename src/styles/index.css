@@ -105,11 +105,6 @@
   h6 {
     text-wrap: wrap;
   }
-
-  :focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-  }
 }
 
 @utility sticky {
@@ -170,17 +165,5 @@
 
   .marquee-motion {
     animation: brand-marquee 22s linear infinite;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-    }
   }
 }

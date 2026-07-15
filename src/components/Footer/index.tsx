@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <nav className="w-full px-4 sm:w-1/2 lg:w-2/12" aria-label={t.footer.menuTitle}>
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
             <h2 className="mb-5 text-base font-bold text-black">
               {t.footer.menuTitle}
             </h2>
@@ -81,9 +81,9 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </nav>
+          </div>
 
-          <nav className="w-full px-4 sm:w-1/2 lg:w-2/12" aria-label={t.footer.policyTitle}>
+          <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
             <h2 className="mb-5 text-base font-bold text-black">
               {t.footer.policyTitle}
             </h2>
@@ -113,24 +113,18 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </div>
 
           {/* Contact */}
           <div className="w-full px-4 lg:w-3/12">
             <h2 className="mb-5 text-base font-bold text-black">
               {t.footer.contactTitle}
             </h2>
-            <address className="not-italic">
-              <p className="text-body-color text-sm">
-                {t.footer.emailLabel}:{" "}
-                <a
-                  href="mailto:contact@unigate.kr"
-                  className="hover:text-primary transition"
-                >
-                  contact@unigate.kr
-                </a>
-              </p>
-            </address>
+            <ul className="space-y-3">
+              <li className="text-body-color text-sm">
+                {t.footer.emailLabel}: contact@unigate.kr
+              </li>
+            </ul>
           </div>
         </div>
 

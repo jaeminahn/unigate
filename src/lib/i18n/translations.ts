@@ -10,7 +10,6 @@ export const translations = {
       contact: "Kontak",
     },
     hero: {
-      eyebrow: "UNIGATE",
       title:
         "Satu-satunya Pendidikan Bahasa Korea di Korea untuk Keberhasilan Transfer, Dilengkapi Pembelajaran Sesuai Jurusan dengan Dukungan AI",
       subtitle:
@@ -18,7 +17,6 @@ export const translations = {
       cta: "Masuk ke LMS",
     },
     features: {
-      eyebrow: "Kurikulum",
       title: "Roadmap Kurikulum 4 Semester",
       paragraph:
         "Pembelajaran bahasa Korea secara bertahap, dari dasar hingga praktik untuk mencapai target belajar.",
@@ -48,7 +46,6 @@ export const translations = {
       ],
     },
     about: {
-      eyebrow: "Materi Pembelajaran",
       title: "Dari Dasar hingga Sesuai Jurusan dengan Materi Pembelajaran yang Dikembangkan Sendiri",
       paragraph:
         "Menghubungkan setiap tahap pembelajaran, mulai dari bahasa Korea dasar dan persiapan TOPIK hingga bahasa Korea untuk menunjang adaptasi perkuliahan sesuai jurusan, dengan materi pembelajaran dan catatan penjelasan yang dikembangkan sendiri.",
@@ -99,7 +96,6 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "Program",
       title: "Pilih kursus",
       paragraph:
         "Kursus semester reguler diselenggarakan oleh universitas mitra, dan saat ini layanan ini hanya tersedia bagi mahasiswa Indonesia.",
@@ -139,7 +135,6 @@ export const translations = {
       },
     },
     contact: {
-      eyebrow: "Konsultasi",
       title: "Konsultasi Gratis",
       description:
         "Masih bingung atau punya pertanyaan? Isi data Anda di bawah ini, kami akan membantu melalui email.",
@@ -189,14 +184,12 @@ export const translations = {
       contact: "문의",
     },
     hero: {
-      eyebrow: "UNIGATE",
       title: "국내 유일 성공적인 편입학을 위한 AI 기반 전공 맞춤 한국어 교육",
       subtitle:
         "인도네시아 전문대학의 학위과정과 연계하여 유학생의 한국 대학 편입학을 대비한 온라인 한국어 교육 서비스를 제공합니다.",
       cta: "LMS 바로가기",
     },
     features: {
-      eyebrow: "커리큘럼",
       title: "4학기 커리큘럼 로드맵",
       paragraph:
         "기초부터 실전·성과까지 이어지는 단계형 한국어 교육 과정입니다.",
@@ -226,7 +219,6 @@ export const translations = {
       ],
     },
     about: {
-      eyebrow: "교재",
       title: "자체 개발 교재로 기초부터 전공까지",
       paragraph:
         "기초 한국어부터 TOPIK·전공 적응까지 자체 교재와 해설 노트로 단계를 연계합니다.",
@@ -277,7 +269,6 @@ export const translations = {
       ],
     },
     pricing: {
-      eyebrow: "프로그램",
       title: "수강 옵션",
       paragraph:
         "정규 학기 과정은 협약 대학에서 진행되며, 현재 인도네시아 수강생에 한하여 서비스를 제공합니다.",
@@ -317,7 +308,6 @@ export const translations = {
       },
     },
     contact: {
-      eyebrow: "상담",
       title: "상담 신청",
       description:
         "아래에 정보를 남겨주시면 이메일로 빠르게 안내드리겠습니다.",

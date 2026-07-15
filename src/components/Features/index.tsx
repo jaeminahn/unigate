@@ -11,23 +11,26 @@ const Features = () => {
   return (
     <section
       id="curriculum"
-      className="py-16 md:py-20 lg:py-28"
+      className="pt-16 pb-10 md:pt-20 md:pb-12 lg:pt-28 lg:pb-14"
     >
       <div className="container">
         <SectionTitle
-          eyebrow={t.features.eyebrow}
           title={t.features.title}
           paragraph={<>{t.features.paragraph}</>}
           center
         />
 
-        <ol className="relative mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {featuresData.map((feature, index) => (
-            <li key={index}>
-              <SingleFeature feature={{ ...feature, id: index + 1 }} index={index} />
-            </li>
-          ))}
-        </ol>
+        <div className="relative mt-12">
+          <div className="pointer-events-none absolute top-7 left-0 hidden h-px w-full bg-black/10 lg:block" />
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+            {featuresData.map((feature, index) => (
+              <SingleFeature key={index} feature={{ ...feature, id: index + 1 }} index={index} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-16 h-px w-full bg-black/10" />
       </div>
     </section>
   );
