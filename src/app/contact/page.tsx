@@ -3,9 +3,9 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UNIGATE - Ajukan Konsultasi",
+  title: "UNIGATE - Konsultasi Gratis",
   description:
-    "Halaman konsultasi UNIGATE. Kirimkan informasi Anda dan kami akan segera menghubungi Anda melalui email.",
+    "Masih bingung atau punya pertanyaan? Isi data Anda di bawah ini, kami akan membantu melalui email.",
 };
 
 const ContactPage = () => {

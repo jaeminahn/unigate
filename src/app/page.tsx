@@ -7,9 +7,9 @@ import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "UNIGATE - Pendidikan Bahasa Korea Berbasis AI Sesuai Jurusan",
+  title: "UNIGATE - Pendidikan Bahasa Korea untuk Keberhasilan Transfer",
   description:
-    "Pendidikan bahasa Korea berbasis AI yang disesuaikan dengan jurusan untuk transfer yang sukses ke universitas Korea.",
+    "Kami menyediakan layanan pembelajaran bahasa Korea online yang terintegrasi dengan program diploma di perguruan tinggi vokasi Indonesia untuk mempersiapkan mahasiswa melanjutkan studi ke universitas di Korea melalui jalur transfer.",
 };
 
 export default function Home() {

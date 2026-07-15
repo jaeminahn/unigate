@@ -11,44 +11,44 @@ export const translations = {
     },
     hero: {
       title:
-        "Pendidikan Bahasa Korea Berbasis AI yang Disesuaikan dengan Jurusan untuk Transfer yang Sukses",
+        "Satu-satunya Pendidikan Bahasa Korea di Korea untuk Keberhasilan Transfer, Dilengkapi Pembelajaran Sesuai Jurusan dengan Dukungan AI",
       subtitle:
-        "Menyediakan layanan pembelajaran bahasa Korea online yang terintegrasi dengan program diploma di perguruan tinggi vokasi Indonesia, mempersiapkan mahasiswa untuk transfer ke universitas Korea.",
-      cta: "Ke LMS",
+        "Kami menyediakan layanan pembelajaran bahasa Korea online yang terintegrasi dengan program diploma di perguruan tinggi vokasi Indonesia untuk mempersiapkan mahasiswa melanjutkan studi ke universitas di Korea melalui jalur transfer.",
+      cta: "Masuk ke LMS",
     },
     features: {
       title: "Roadmap Kurikulum 4 Semester",
       paragraph:
-        "Program pembelajaran bahasa Korea bertahap dari dasar hingga praktik dan pencapaian hasil.",
+        "Pembelajaran bahasa Korea secara bertahap, dari dasar hingga praktik untuk mencapai target belajar.",
       semesterLabel: "SEMESTER",
       stepLabel: "TAHAP",
       items: [
         {
-          title: "Membangun Dasar Hangeul",
+          title: "Menguasai Dasar-Dasar Hangeul",
           paragraph:
-            "Mulai dari konsonan dan vokal Hangeul hingga pengucapan dan struktur kalimat dasar. Membangun fondasi yang kuat melalui percakapan dasar serta latihan mendengarkan dan membaca.",
+            "Mulai dari konsonan dan vokal Hangeul hingga pelafalan dan struktur kalimat dasar. Kemampuan dasar bahasa Korea diperkuat melalui percakapan sederhana serta latihan menyimak dan membaca.",
         },
         {
           title: "Persiapan TOPIK II",
           paragraph:
-            "Latihan intensif mendengarkan dan membaca sesuai struktur ujian. Mencapai level 3 TOPIK II dengan memahami strategi penyelesaian soal berdasarkan tipe soal yang sering keluar.",
+            "Latihan intensif menyimak dan membaca disusun sesuai dengan format ujian. Mempelajari berbagai tipe soal yang sering muncul serta strategi menjawabnya untuk mencapai TOPIK II Level 3.",
         },
         {
-          title: "TOPIK II Lanjutan",
+          title: "TOPIK II Tingkat Lanjut",
           paragraph:
-            "Berlatih menulis jawaban di level 4 TOPIK II. Mengembangkan kemampuan menulis logis berbasis soal simulasi praktis yang dihasilkan oleh AI.",
+            "Berlatih menulis jawaban setara TOPIK II Level 4. Kemampuan menulis logis yang dibangun pada tahap sebelumnya disempurnakan melalui latihan simulasi dengan dukungan AI.",
         },
         {
-          title: "Bahasa Korea Adaptasi Jurusan",
+          title: "Bahasa Korea Sesuai Jurusan dengan Dukungan AI",
           paragraph:
-            "Mempelajari kosakata dan ekspresi penting yang dibutuhkan dalam kehidupan kuliah. Memperkuat kemampuan menulis sesuai jurusan melalui layanan bimbingan esai AI untuk meningkatkan adaptasi perkuliahan.",
+            "Mempelajari kosakata dan ungkapan penting yang dibutuhkan dalam kehidupan perkuliahan. Kemampuan menulis sesuai jurusan diperkuat melalui layanan bimbingan penulisan esai berbasis AI untuk membantu mahasiswa beradaptasi dengan perkuliahan.",
         },
       ],
     },
     about: {
-      title: "Dari Dasar hingga Jurusan dengan Bahan Ajar yang Dikembangkan Sendiri",
+      title: "Dari Dasar hingga Sesuai Jurusan dengan Materi Pembelajaran yang Dikembangkan Sendiri",
       paragraph:
-        "Menghubungkan tahapan belajar dari bahasa Korea dasar hingga persiapan TOPIK dan adaptasi jurusan menggunakan bahan ajar dan catatan pembahasan yang dikembangkan secara mandiri.",
+        "Menghubungkan setiap tahap pembelajaran, mulai dari bahasa Korea dasar dan persiapan TOPIK hingga bahasa Korea untuk menunjang adaptasi perkuliahan sesuai jurusan, dengan materi pembelajaran dan catatan penjelasan yang dikembangkan sendiri.",
       imageAlt: "Pratinjau Bahan Ajar",
       cards: [
         {
@@ -56,59 +56,59 @@ export const translations = {
           category: "Dasar",
           title: "Ganada Korea 1",
           description:
-            "Menyusun prinsip konsonan, vokal, dan 받침 (konsonan akhir) serta menguasai membaca dan berbicara dasar melalui pola percakapan yang ringkas.",
+            "Memahami prinsip konsonan, vokal, dan batchim (konsonan akhir), serta mengembangkan keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
         },
         {
           badge: "Bahan Ajar Dasar ②",
           category: "Dasar",
           title: "Ganada Korea 2",
           description:
-            "Membangun struktur kalimat dasar dan pola kalimat penting, serta memperkuat dasar mendengarkan dan membaca untuk melanjutkan ke persiapan TOPIK II.",
+            "Mempelajari struktur kalimat dasar dan pola kalimat penting secara bertahap, serta memperkuat keterampilan dasar menyimak dan membaca sebagai landasan untuk persiapan TOPIK II.",
         },
         {
           badge: "Bahan Ajar Pendamping",
           category: "Kosakata",
           title: "Buku Kosakata Inti",
           description:
-            "Memilih kosakata penting sehari-hari dan akademik berdasarkan frekuensi kemunculan, disusun berbasis contoh kalimat untuk langsung memperluas penggunaan kata dalam kalimat.",
+            "Memilih kosakata penting untuk kehidupan sehari-hari dan pembelajaran berdasarkan frekuensi kemunculannya, lalu menyusunnya dengan berfokus pada contoh kalimat agar kosakata dapat langsung dikembangkan menjadi kalimat.",
         },
         {
           badge: "TOPIK II",
           category: "Tambahan",
           title: "Catatan Pembahasan TOPIK II",
           description:
-            "Menyusun inti tipe soal dari bahan ajar eksternal dalam bahasa Indonesia, mencakup rutinitas penyelesaian, titik perangkap, dan pengaturan waktu sekaligus.",
+            "Merangkum tipe-tipe soal utama dari bahan ajar eksternal dalam bahasa Indonesia serta membahas strategi pengerjaan, bagian yang sering menjebak, dan strategi pengelolaan waktu secara menyeluruh.",
         },
         {
           badge: "TOPIK II",
           category: "Tambahan",
           title: "Buku Menulis TOPIK II",
           description:
-            "Menyediakan templat struktur jawaban dan pengembangan paragraf berdasarkan tipe soal, serta menargetkan kemampuan menulis level 4 melalui contoh jawaban dan pengembangan ekspresi.",
+            "Menyediakan templat struktur jawaban dan pengembangan paragraf untuk setiap tipe soal, serta menggunakan contoh jawaban dan perluasan ungkapan untuk mencapai kemampuan menulis setara Level 4.",
         },
         {
           badge: "Adaptasi Jurusan",
           category: "Akademik",
           title: "Campus Bridge",
           description:
-            "Melatih kosakata inti dan menulis akademik sesuai jurusan, serta menghubungkannya dengan praktik tugas kuliah seperti tugas, laporan, dan email.",
+            "Melatih kosakata inti dan penulisan akademik sesuai jurusan, serta menerapkannya secara praktis dalam berbagai bentuk tugas perkuliahan, seperti makalah, laporan, dan email resmi.",
         },
       ],
     },
     pricing: {
-      title: "Opsi Kursus",
+      title: "Pilih kursus",
       paragraph:
-        "Kursus semester reguler dijalankan oleh universitas mitra, dan saat ini layanan hanya tersedia untuk peserta didik Indonesia.",
+        "Kursus semester reguler diselenggarakan oleh universitas mitra, dan saat ini layanan ini hanya tersedia bagi mahasiswa Indonesia.",
       entry: {
         badge: "ENTRY",
         packageName: "Dasar Bahasa Korea 1 Bulan",
         priceLabel: "IDR 99.000",
         subtitle:
-          "Kursus pemula intensif selama 4 minggu untuk menguasai 'Ganadara', pengucapan, 받침, dan percakapan dasar",
+          "Kursus pemula intensif selama 4 minggu untuk menguasai 'Ganadara', pengucapan, batchim, dan percakapan dasar",
         cta: "Mulai Sekarang",
         note: "Kursus pemula dapat diikuti langsung di situs ini.",
         features: [
-          "Rangkuman cepat Hangeul, pengucapan, dan 받침",
+          "Rangkuman cepat Hangeul, pengucapan, dan batchim",
           "Pola percakapan dasar & ekspresi penting",
           "Pembelajaran dengan Asisten AI",
           "Jalur Persiapan TOPIK II (level 3–4)",
@@ -127,7 +127,7 @@ export const translations = {
         recommended: "Direkomendasikan",
         features: [
           "Seluruh kurikulum kursus pemula",
-          "Latihan tipe mendengarkan, membaca, dan menulis",
+          "Latihan tipe menyimak, membaca, dan menulis",
           "Pembelajaran dengan Asisten AI",
           "Jalur Persiapan TOPIK II (level 3–4)",
           "Latihan Bahasa Korea Jurusan/Laporan",
@@ -135,9 +135,9 @@ export const translations = {
       },
     },
     contact: {
-      title: "Ajukan Konsultasi",
+      title: "Konsultasi Gratis",
       description:
-        "Tinggalkan informasi Anda di bawah ini dan kami akan segera menghubungi Anda melalui email.",
+        "Masih bingung atau punya pertanyaan? Isi data Anda di bawah ini, kami akan membantu melalui email.",
       form: {
         name: "Nama",
         namePlaceholder: "Masukkan nama Anda",
@@ -149,14 +149,14 @@ export const translations = {
         timelinePlaceholder: "Contoh: Aplikasi September 2026",
         message: "Detail Pertanyaan",
         messagePlaceholder:
-          "Ceritakan secara singkat situasi Anda (pendidikan/IPK/level bahasa Korea) dan hal yang ingin ditanyakan.",
-        subject: "Email Ajukan Konsultasi",
+          "Ceritakan secara singkat situasi Anda (misalnya tingkat kemampuan bahasa Korea, IPK, latar belakang pendidikan) serta hal yang ingin Anda tanyakan.",
+        subject: "Email Konsultasi Gratis",
         submit: "Kirim Konsultasi",
       },
     },
     footer: {
       tagline:
-        "Menyediakan pendidikan bahasa Korea berbasis AI yang disesuaikan dengan jurusan untuk transfer yang sukses ke universitas Korea.",
+        "Satu-satunya pendidikan bahasa Korea di Korea untuk keberhasilan transfer, dilengkapi pembelajaran sesuai jurusan dengan dukungan AI.",
       menuTitle: "Menu",
       policyTitle: "Kebijakan",
       terms: "Syarat & Ketentuan",
