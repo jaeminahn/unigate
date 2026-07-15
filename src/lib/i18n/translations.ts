@@ -56,7 +56,7 @@ export const translations = {
           category: "Dasar",
           title: "Ganada Korea 1",
           description:
-            "Memahami prinsip konsonan, vokal, dan batchim (konsonan akhir), serta mengembangkan keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
+            "Memahami prinsip konsonan, vokal, dan 받침, serta mengembangkan keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
         },
         {
           badge: "Bahan Ajar Dasar ②",
@@ -104,11 +104,11 @@ export const translations = {
         packageName: "Dasar Bahasa Korea 1 Bulan",
         priceLabel: "IDR 99.000",
         subtitle:
-          "Kursus pemula intensif selama 4 minggu untuk menguasai 'Ganadara', pengucapan, batchim, dan percakapan dasar",
+          "Kursus pemula intensif selama 4 minggu untuk menguasai ㄱㄴㄷㄹ, pengucapan, 받침, dan percakapan dasar",
         cta: "Mulai Sekarang",
         note: "Kursus pemula dapat diikuti langsung di situs ini.",
         features: [
-          "Rangkuman cepat Hangeul, pengucapan, dan batchim",
+          "Rangkuman cepat pengucapan, ㄱㄴㄷㄹ, dan 받침",
           "Pola percakapan dasar & ekspresi penting",
           "Pembelajaran dengan Asisten AI",
           "Jalur Persiapan TOPIK II (level 3–4)",
