@@ -74,7 +74,7 @@ const PricingBox = (props: {
           </p>
         </div>
 
-        <p className="text-body-color mb-7 line-clamp-2 min-h-[48px] text-base leading-relaxed">
+        <p className="text-body-color mb-7 text-base leading-relaxed">
           {subtitle}
         </p>
 
