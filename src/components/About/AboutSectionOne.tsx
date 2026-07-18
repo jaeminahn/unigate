@@ -27,9 +27,9 @@ const AboutSectionOne = () => {
               <div className="mx-auto mb-12 max-w-[570px] lg:mb-0">
                 <div className="grid gap-4 sm:grid-cols-2">
                   {cards.map((card, index) => (
-                    <ScrollReveal key={index} delay={index * 80}>
+                    <ScrollReveal key={index} delay={index * 80} className="h-full">
                       <div
-                        className="group border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5"
+                        className="group flex h-full flex-col border-body-color/[.15] rounded-2xl border bg-white/60 p-5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/[.15] dark:bg-white/5"
                       >
                         <div className="mb-3 flex items-center">
                           <span className="bg-primary/10 text-primary inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold">
@@ -39,7 +39,7 @@ const AboutSectionOne = () => {
                         <p className="text-dark mb-2 text-base font-semibold dark:text-white">
                           {card.title}
                         </p>
-                        <p className="text-body-color text-sm leading-relaxed">
+                        <p className="text-body-color flex-1 text-sm leading-relaxed">
                           {card.description}
                         </p>
                       </div>
