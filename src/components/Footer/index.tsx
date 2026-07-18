@@ -4,17 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import TikTokIcon from "@/components/icons/TikTokIcon";
+import ScrollLink from "@/components/Common/ScrollLink";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Footer = () => {
   const t = useTranslation();
 
   const menu = [
-    { title: t.nav.home, href: "/" },
-    { title: t.nav.about, href: "/tentang-kami" },
-    { title: t.nav.curriculum, href: "/kurikulum" },
-    { title: t.nav.partners, href: "/institusi-mitra" },
-    { title: t.nav.contact, href: "/contact" },
+    { title: t.nav.home, href: "#home" },
+    { title: t.nav.about, href: "#about" },
+    { title: t.nav.curriculum, href: "#curriculum" },
+    { title: t.nav.partners, href: "#partners" },
+    { title: t.nav.contact, href: "#contact" },
   ];
 
   const social = [
@@ -73,12 +74,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {menu.map((item) => (
                 <li key={item.title}>
-                  <Link
+                  <ScrollLink
                     href={item.href}
                     className="text-body-color hover:text-primary text-sm transition"
                   >
                     {item.title}
-                  </Link>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>

@@ -3,6 +3,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
+import Partners from "@/components/Partners";
 import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Features />
       <AboutSectionOne />
       <Pricing />
+      <Partners />
       <Contact />
     </>
   );

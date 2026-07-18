@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getMenuData } from "./menuData";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ScrollLink from "@/components/Common/ScrollLink";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Header = () => {
@@ -25,7 +25,17 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
-  });
+    return () => window.removeEventListener("scroll", handleStickyNavbar);
+  }, []);
+
+  // Active hash for anchor links
+  const [activeHash, setActiveHash] = useState("");
+  useEffect(() => {
+    const updateHash = () => setActiveHash(window.location.hash);
+    updateHash();
+    window.addEventListener("hashchange", updateHash);
+    return () => window.removeEventListener("hashchange", updateHash);
+  }, []);
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
@@ -37,9 +47,14 @@ const Header = () => {
     }
   };
 
-  const usePathName = usePathname();
   const t = useTranslation();
   const menuData = getMenuData(t);
+
+  const isActive = (path?: string) => {
+    if (!path) return false;
+    if (path === "#home") return activeHash === "" || activeHash === "#home";
+    return activeHash === path;
+  };
 
   return (
     <>
@@ -114,16 +129,17 @@ const Header = () => {
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
-                          <Link
+                          <ScrollLink
                             href={menuItem.path}
+                            onClick={() => setNavbarOpen(false)}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
+                              isActive(menuItem.path)
                                 ? "text-primary dark:text-white"
                                 : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                             }`}
                           >
                             {menuItem.title}
-                          </Link>
+                          </ScrollLink>
                         ) : (
                           <>
                             <p
@@ -147,14 +163,15 @@ const Header = () => {
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, index) => (
-                                <Link
-                                  href={submenuItem.path}
+                              {menuItem.submenu?.map((submenuItem, index) => (
+                                <ScrollLink
+                                  href={submenuItem.path ?? ""}
                                   key={index}
+                                  onClick={() => setNavbarOpen(false)}
                                   className="text-dark hover:text-primary block rounded-sm py-2.5 text-sm lg:px-3 dark:text-white/70 dark:hover:text-white"
                                 >
                                   {submenuItem.title}
-                                </Link>
+                                </ScrollLink>
                               ))}
                             </div>
                           </>

@@ -7,7 +7,7 @@ const Partners = () => {
   const t = useTranslation();
 
   return (
-    <section className="py-16 md:py-20 lg:py-28">
+    <section id="partners" className="py-16 md:py-20 lg:py-28">
       <div className="container">
         <ScrollReveal>
           <div className="mx-auto max-w-[800px] text-center">

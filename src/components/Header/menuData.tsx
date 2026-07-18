@@ -6,31 +6,31 @@ export function getMenuData(t: Translations): Menu[] {
     {
       id: 1,
       title: t.nav.home,
-      path: "/",
+      path: "#home",
       newTab: false,
     },
     {
       id: 2,
       title: t.nav.about,
-      path: "/tentang-kami",
+      path: "#about",
       newTab: false,
     },
     {
       id: 3,
       title: t.nav.curriculum,
-      path: "/kurikulum",
+      path: "#curriculum",
       newTab: false,
     },
     {
       id: 4,
       title: t.nav.partners,
-      path: "/institusi-mitra",
+      path: "#partners",
       newTab: false,
     },
     {
       id: 5,
       title: t.nav.contact,
-      path: "/contact",
+      path: "#contact",
       newTab: false,
     },
   ];
