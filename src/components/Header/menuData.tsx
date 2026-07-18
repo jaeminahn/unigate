@@ -12,19 +12,19 @@ export function getMenuData(t: Translations): Menu[] {
     {
       id: 2,
       title: t.nav.about,
-      path: "/",
+      path: "/tentang-kami",
       newTab: false,
     },
     {
       id: 3,
       title: t.nav.curriculum,
-      path: "/",
+      path: "/kurikulum",
       newTab: false,
     },
     {
       id: 4,
       title: t.nav.partners,
-      path: "/",
+      path: "/institusi-mitra",
       newTab: false,
     },
     {

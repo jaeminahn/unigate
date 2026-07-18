@@ -148,6 +148,11 @@ export const translations = {
         submit: "Kirim Konsultasi",
       },
     },
+    partners: {
+      title: "Institusi Mitra",
+      description:
+        "Saat ini kami belum memiliki institusi mitra. Informasi mengenai kerja sama akan diumumkan di sini.",
+    },
     footer: {
       tagline:
         "Satu-satunya pendidikan bahasa Korea di Korea untuk keberhasilan transfer, dilengkapi pembelajaran sesuai jurusan dengan dukungan AI.",
@@ -314,6 +319,11 @@ export const translations = {
         subject: "상담 신청 이메일",
         submit: "상담 신청하기",
       },
+    },
+    partners: {
+      title: "협약 기관",
+      description:
+        "현재 협약 기관이 없습니다. 추후 협약 기관 정보가 이곳에 공지될 예정입니다.",
     },
     footer: {
       tagline:

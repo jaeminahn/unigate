@@ -11,9 +11,9 @@ const Footer = () => {
 
   const menu = [
     { title: t.nav.home, href: "/" },
-    { title: t.nav.about, href: "/" },
-    { title: t.nav.curriculum, href: "/" },
-    { title: t.nav.partners, href: "/" },
+    { title: t.nav.about, href: "/tentang-kami" },
+    { title: t.nav.curriculum, href: "/kurikulum" },
+    { title: t.nav.partners, href: "/institusi-mitra" },
     { title: t.nav.contact, href: "/contact" },
   ];
 
