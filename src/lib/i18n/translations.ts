@@ -11,9 +11,9 @@ export const translations = {
     },
     hero: {
       title:
-        "Satu-satunya Pendidikan Bahasa Korea di Korea untuk Keberhasilan Transfer, Dilengkapi Pembelajaran Sesuai Jurusan dengan Dukungan AI",
+        "Satu-satunya Program Pendidikan Bahasa Korea dari Korea untuk Keberhasilan Transfer ke Universitas Korea, dengan Pembelajaran Sesuai Jurusan yang Didukung AI",
       subtitle:
-        "Kami menyediakan layanan pembelajaran bahasa Korea online yang terintegrasi dengan program diploma di perguruan tinggi vokasi Indonesia untuk mempersiapkan mahasiswa melanjutkan studi ke universitas di Korea melalui jalur transfer.",
+        "Kami menyediakan layanan pembelajaran bahasa Korea online yang dirancang untuk mendukung program diploma di perguruan tinggi vokasi Indonesia, sehingga mahasiswa dapat mempersiapkan diri untuk melanjutkan studi ke universitas di Korea melalui jalur transfer.",
       cta: "Masuk ke LMS",
     },
     features: {
@@ -24,79 +24,79 @@ export const translations = {
       stepLabel: "TAHAP",
       items: [
         {
-          title: "Menguasai Dasar-Dasar Hangeul",
+          title: "Penguasaan Dasar-Dasar Hangeul",
           paragraph:
-            "Mulai dari konsonan dan vokal Hangeul hingga pelafalan dan struktur kalimat dasar. Kemampuan dasar bahasa Korea diperkuat melalui percakapan sederhana serta latihan menyimak dan membaca.",
+            "Pembelajaran konsonan dan vokal Hangeul, pelafalan, serta struktur kalimat dasar. Penguatan kemampuan dasar bahasa Korea melalui percakapan sederhana serta latihan menyimak dan membaca.",
         },
         {
           title: "Persiapan TOPIK II",
           paragraph:
-            "Latihan intensif menyimak dan membaca disusun sesuai dengan format ujian. Mempelajari berbagai tipe soal yang sering muncul serta strategi menjawabnya untuk mencapai TOPIK II Level 3.",
+            "Latihan intensif kemampuan menyimak dan membaca disusun sesuai dengan format ujian. Pembelajaran berbagai tipe soal yang sering muncul serta strategi menjawabnya ditujukan untuk mencapai kemampuan setara TOPIK II Level 3.",
         },
         {
           title: "TOPIK II Tingkat Lanjut",
           paragraph:
-            "Berlatih menulis jawaban setara TOPIK II Level 4. Kemampuan menulis logis yang dibangun pada tahap sebelumnya disempurnakan melalui latihan simulasi dengan dukungan AI.",
+            "Pelatihan penulisan jawaban setara TOPIK II Level 4. Penyempurnaan kemampuan menulis logis melalui latihan berbasis soal simulasi yang dibuat oleh AI.",
         },
         {
           title: "Bahasa Korea Sesuai Jurusan dengan Dukungan AI",
           paragraph:
-            "Mempelajari kosakata dan ungkapan penting yang dibutuhkan dalam kehidupan perkuliahan. Kemampuan menulis sesuai jurusan diperkuat melalui layanan bimbingan penulisan esai berbasis AI untuk membantu mahasiswa beradaptasi dengan perkuliahan.",
+            "Pembelajaran kosakata dan ungkapan penting yang dibutuhkan dalam kehidupan perkuliahan. Pelatihan intensif kemampuan menulis sesuai jurusan dilakukan melalui layanan bimbingan penulisan esai berbasis AI untuk meningkatkan kemampuan beradaptasi dalam perkuliahan.",
         },
       ],
     },
     about: {
-      title: "Dari Dasar hingga Sesuai Jurusan dengan Materi Pembelajaran yang Dikembangkan Sendiri",
+      title: "Dari Dasar hingga Pembelajaran Sesuai Jurusan dengan Materi Ajar yang Dikembangkan Sendiri",
       paragraph:
-        "Menghubungkan setiap tahap pembelajaran, mulai dari bahasa Korea dasar dan persiapan TOPIK hingga bahasa Korea untuk menunjang adaptasi perkuliahan sesuai jurusan, dengan materi pembelajaran dan catatan penjelasan yang dikembangkan sendiri.",
+        "Menghubungkan setiap tahap pembelajaran, mulai dari bahasa Korea dasar dan persiapan TOPIK hingga bahasa Korea sesuai jurusan untuk menunjang adaptasi dalam perkuliahan, dengan materi ajar dan catatan penjelasan yang dikembangkan sendiri.",
       imageAlt: "Pratinjau Bahan Ajar",
       cards: [
         {
           badge: "Bahan Ajar Dasar ①",
           category: "Dasar",
-          title: "Ganada Korea 1",
+          title: "GaNaDa Korean 1",
           description:
-            "Memahami prinsip konsonan, vokal, dan 받침, serta mengembangkan keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
+            "Memahami prinsip konsonan, vokal, dan 받침, serta melatih keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
         },
         {
           badge: "Bahan Ajar Dasar ②",
           category: "Dasar",
-          title: "Ganada Korea 2",
+          title: "GaNaDa Korean 2",
           description:
-            "Mempelajari struktur kalimat dasar dan pola kalimat penting secara bertahap, serta memperkuat keterampilan dasar menyimak dan membaca sebagai landasan untuk persiapan TOPIK II.",
+            "Mempelajari struktur kalimat dasar dan pola kalimat penting secara bertahap, sambil memperkuat keterampilan dasar menyimak dan membaca sebagai bekal untuk melanjutkan ke persiapan TOPIK II.",
         },
         {
           badge: "Bahan Ajar Pendamping",
           category: "Kosakata",
           title: "Buku Kosakata Inti",
           description:
-            "Memilih kosakata penting untuk kehidupan sehari-hari dan pembelajaran berdasarkan frekuensi kemunculannya, lalu menyusunnya dengan berfokus pada contoh kalimat agar kosakata dapat langsung dikembangkan menjadi kalimat.",
+            "Memilih kosakata penting untuk kehidupan sehari-hari dan pembelajaran berdasarkan frekuensi kemunculannya, lalu menyusunnya dengan berfokus pada contoh kalimat agar pelajar dapat langsung mengembangkan kosakata menjadi kalimat.",
         },
         {
           badge: "TOPIK II",
           category: "Tambahan",
           title: "Catatan Pembahasan TOPIK II",
           description:
-            "Merangkum tipe-tipe soal utama dari bahan ajar eksternal dalam bahasa Indonesia serta membahas strategi pengerjaan, bagian yang sering menjebak, dan strategi pengelolaan waktu secara menyeluruh.",
+            "Merangkum tipe-tipe soal utama dari buku TOPIK yang tersedia di pasaran dalam bahasa Indonesia serta membahas langkah pengerjaan, bagian yang sering menjebak, dan pengelolaan waktu secara menyeluruh.",
         },
         {
           badge: "TOPIK II",
           category: "Tambahan",
-          title: "Buku Menulis TOPIK II",
+          title: "Catatan Menulis TOPIK II",
           description:
-            "Menyediakan templat struktur jawaban dan pengembangan paragraf untuk setiap tipe soal, serta menggunakan contoh jawaban dan perluasan ungkapan untuk mencapai kemampuan menulis setara Level 4.",
+            "Menyediakan templat struktur jawaban dan pengembangan paragraf untuk setiap tipe soal, dilengkapi contoh jawaban dan pengayaan ungkapan untuk membantu mencapai kemampuan menulis setara TOPIK II Level 4.",
         },
         {
           badge: "Adaptasi Jurusan",
           category: "Akademik",
           title: "Campus Bridge",
           description:
-            "Melatih kosakata inti dan penulisan akademik sesuai jurusan, serta menerapkannya secara praktis dalam berbagai bentuk tugas perkuliahan, seperti makalah, laporan, dan email resmi.",
+            "Melatih kosakata inti dan penulisan akademik sesuai jurusan, serta mempraktikkannya melalui berbagai bentuk tugas perkuliahan, seperti makalah, laporan, dan email.",
         },
       ],
     },
     pricing: {
-      title: "Pilih kursus",
+      title: "Opsi kursus",
       paragraph:
         "Kursus semester reguler diselenggarakan oleh universitas mitra, dan saat ini layanan ini hanya tersedia bagi mahasiswa Indonesia.",
       entry: {
@@ -104,15 +104,15 @@ export const translations = {
         packageName: "Dasar Bahasa Korea 1 Bulan",
         priceLabel: "IDR 99.000",
         subtitle:
-          "Kursus pemula intensif selama 4 minggu untuk menguasai ㄱㄴㄷㄹ, pengucapan, 받침, dan percakapan dasar",
+          "Kursus pemula intensif dalam waktu 4 minggu untuk menguasai GaNaDaRa, pengucapan, dalam waktu 4 minggu, dan percakapan dasar",
         cta: "Mulai Sekarang",
         note: "Kursus pemula dapat diikuti langsung di situs ini.",
         features: [
-          "Rangkuman cepat pengucapan, ㄱㄴㄷㄹ, dan 받침",
-          "Pola percakapan dasar & ekspresi penting",
+          "Rangkuman cepat Hangeul, pengucapan, dan batchim (konsonan akhir)",
+          "Pola percakapan dasar dan ekspresi penting",
           "Pembelajaran dengan Asisten AI",
-          "Jalur Persiapan TOPIK II (level 3–4)",
-          "Latihan Bahasa Korea Jurusan/Laporan",
+          "Jalur Persiapan TOPIK II (Level 3–4)",
+          "Latihan Bahasa Korea Sesuai Jurusan dan Penulisan Laporan",
         ],
       },
       semester: {
@@ -121,16 +121,16 @@ export const translations = {
         priceLabel: "IDR 3.000.000",
         priceUnit: "/ semester",
         subtitle:
-          "Kurikulum yang menghubungkan persiapan TOPIK II hingga bahasa Korea jurusan",
+          "Kurikulum lengkap mulai dari persiapan TOPIK II secara bertahap hingga pembelajaran bahasa Korea sesuai jurusan",
         cta: "Lihat Daftar Universitas Mitra",
         note: "Kursus reguler hanya tersedia di universitas mitra.",
         recommended: "Direkomendasikan",
         features: [
-          "Seluruh kurikulum kursus pemula",
-          "Latihan tipe menyimak, membaca, dan menulis",
+          "Kurikulum Lengkap Kursus Pemula",
+          "Latihan berbagai tipe soal TOPIK menyimak, membaca, dan menulis",
           "Pembelajaran dengan Asisten AI",
-          "Jalur Persiapan TOPIK II (level 3–4)",
-          "Latihan Bahasa Korea Jurusan/Laporan",
+          "Jalur Persiapan TOPIK II (Level 3–4)",
+          "Latihan Bahasa Korea Sesuai Jurusan dan Penulisan Laporan",
         ],
       },
     },
@@ -171,7 +171,7 @@ export const translations = {
       home: "Beranda",
     },
     language: {
-      id: "Bahasa",
+      id: "Bahasa Indonesia",
       ko: "한국어",
     },
   },
@@ -344,7 +344,7 @@ export const translations = {
       home: "Home",
     },
     language: {
-      id: "Bahasa",
+      id: "Bahasa Indonesia",
       ko: "한국어",
     },
   },

@@ -3,7 +3,7 @@
 import { useLanguage, Language } from "@/lib/i18n/LanguageContext";
 
 const languages: { code: Language; label: string }[] = [
-  { code: "id", label: "Bahasa" },
+  { code: "id", label: "Bahasa Indonesia" },
   { code: "ko", label: "한국어" },
 ];
 
@@ -19,7 +19,7 @@ const LanguageSwitcher = () => {
             key={code}
             onClick={() => setLang(code)}
             aria-pressed={active}
-            className={`rounded-full px-3 py-1 text-xs font-semibold transition ${
+            className={`min-w-[96px] flex-1 rounded-full px-4 py-1.5 text-center text-xs font-semibold whitespace-nowrap transition ${
               active
                 ? "bg-primary text-white shadow-sm"
                 : "text-black/60 hover:text-black dark:text-white/70 dark:hover:text-white"
