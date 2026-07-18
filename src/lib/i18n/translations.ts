@@ -53,42 +53,36 @@ export const translations = {
       cards: [
         {
           badge: "Bahan Ajar Dasar ①",
-          category: "Dasar",
           title: "GaNaDa Korean 1",
           description:
             "Memahami prinsip konsonan, vokal, dan 받침, serta melatih keterampilan membaca dan berbicara dasar secara bersamaan melalui pola percakapan yang ringkas.",
         },
         {
           badge: "Bahan Ajar Dasar ②",
-          category: "Dasar",
           title: "GaNaDa Korean 2",
           description:
             "Mempelajari struktur kalimat dasar dan pola kalimat penting secara bertahap, sambil memperkuat keterampilan dasar menyimak dan membaca sebagai bekal untuk melanjutkan ke persiapan TOPIK II.",
         },
         {
           badge: "Bahan Ajar Pendamping",
-          category: "Kosakata",
           title: "Buku Kosakata Inti",
           description:
             "Memilih kosakata penting untuk kehidupan sehari-hari dan pembelajaran berdasarkan frekuensi kemunculannya, lalu menyusunnya dengan berfokus pada contoh kalimat agar pelajar dapat langsung mengembangkan kosakata menjadi kalimat.",
         },
         {
           badge: "TOPIK II",
-          category: "Tambahan",
           title: "Catatan Pembahasan TOPIK II",
           description:
             "Merangkum tipe-tipe soal utama dari buku TOPIK yang tersedia di pasaran dalam bahasa Indonesia serta membahas langkah pengerjaan, bagian yang sering menjebak, dan pengelolaan waktu secara menyeluruh.",
         },
         {
           badge: "TOPIK II",
-          category: "Tambahan",
           title: "Catatan Menulis TOPIK II",
           description:
             "Menyediakan templat struktur jawaban dan pengembangan paragraf untuk setiap tipe soal, dilengkapi contoh jawaban dan pengayaan ungkapan untuk membantu mencapai kemampuan menulis setara TOPIK II Level 4.",
         },
         {
           badge: "Adaptasi Jurusan",
-          category: "Akademik",
           title: "Campus Bridge",
           description:
             "Melatih kosakata inti dan penulisan akademik sesuai jurusan, serta mempraktikkannya melalui berbagai bentuk tugas perkuliahan, seperti makalah, laporan, dan email.",
@@ -226,42 +220,36 @@ export const translations = {
       cards: [
         {
           badge: "기초 교재 ①",
-          category: "Foundations",
           title: "가나다 한국어 1",
           description:
             "자음·모음·받침 원리를 정리하고 간결한 회화 패턴으로 읽기와 기초 말하기를 동시에 익힙니다.",
         },
         {
           badge: "기초 교재 ②",
-          category: "Foundations",
           title: "가나다 한국어 2",
           description:
             "기본 문장 구조와 필수 문형을 누적하며 듣기·읽기 기본기를 다져 TOPIK II 대비로 연결합니다.",
         },
         {
           badge: "보조 교재",
-          category: "Vocabulary",
           title: "코어 어휘북",
           description:
             "일상·학습 필수 어휘를 빈출 기준으로 선별하고 예문 중심으로 구성해 단어를 문장으로 바로 확장합니다.",
         },
         {
           badge: "TOPIK II",
-          category: "Extras",
           title: "TOPIK II 해설 노트",
           description:
             "외부 교재의 핵심 유형을 인니어로 정리하고 풀이 루틴, 함정 포인트, 시간 배분까지 한 번에 다룹니다.",
         },
         {
           badge: "TOPIK II",
-          category: "Extras",
           title: "TOPIK II 쓰기 노트",
           description:
             "유형별 답안 구조와 문단 전개를 템플릿으로 제공하고 예시 답안과 표현 확장으로 4급 수준 쓰기를 목표로 합니다.",
         },
         {
           badge: "전공 적응",
-          category: "Academic",
           title: "캠퍼스 브릿지",
           description:
             "전공별 핵심 어휘와 학업 글쓰기를 훈련하고 과제·리포트·이메일 등 대학 과제 형식까지 실전으로 연결합니다.",

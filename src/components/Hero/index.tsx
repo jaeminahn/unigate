@@ -13,10 +13,107 @@ const Hero = () => {
         id="home"
         className="relative z-10 overflow-hidden bg-white pt-[120px] pb-16 md:pt-[150px] md:pb-[60px] xl:pt-[180px] xl:pb-[80px] 2xl:pt-[210px] 2xl:pb-[100px]"
       >
+        {/* Background decoration */}
+        <div className="absolute inset-0 z-[-1] overflow-hidden">
+          {/* Soft gradient blobs */}
+          <div className="absolute top-[-10%] right-[-5%] h-[50%] w-[50%] rounded-full bg-primary/[0.06] blur-[100px]" />
+          <div className="absolute bottom-[-10%] left-[-10%] h-[45%] w-[45%] rounded-full bg-primary/[0.05] blur-[100px]" />
+          <div className="absolute top-[20%] left-[15%] h-[30%] w-[30%] rounded-full bg-primary/[0.04] blur-[80px]" />
+
+          {/* Top-right flowing lines */}
+          <svg
+            className="absolute top-0 right-0 opacity-60 lg:opacity-80"
+            width="600"
+            height="420"
+            viewBox="0 0 600 420"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40 320C160 240 300 240 420 270C500 290 560 280 620 250"
+              stroke="url(#hero-line-1)"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+            />
+            <path
+              d="M0 280C140 210 300 200 440 230C530 250 580 240 620 220"
+              stroke="url(#hero-line-2)"
+              strokeWidth="1"
+              strokeLinecap="round"
+            />
+            <path
+              d="M80 360C220 280 380 290 520 320"
+              stroke="url(#hero-line-3)"
+              strokeWidth="1"
+              strokeLinecap="round"
+            />
+            <defs>
+              <linearGradient id="hero-line-1" x1="0" y1="320" x2="620" y2="250" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#155FCC" stopOpacity="0.35" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.05" />
+              </linearGradient>
+              <linearGradient id="hero-line-2" x1="0" y1="280" x2="620" y2="220" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#155FCC" stopOpacity="0.2" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.05" />
+              </linearGradient>
+              <linearGradient id="hero-line-3" x1="80" y1="360" x2="520" y2="320" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#155FCC" stopOpacity="0.15" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.05" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          {/* Bottom-left flowing lines */}
+          <svg
+            className="absolute bottom-0 left-0 opacity-60 lg:opacity-80"
+            width="540"
+            height="300"
+            viewBox="0 0 540 300"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M-20 180C120 140 260 150 380 180C470 205 520 210 560 200"
+              stroke="url(#hero-line-4)"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+            />
+            <path
+              d="M-20 220C140 190 300 190 420 220C500 245 540 250 560 240"
+              stroke="url(#hero-line-5)"
+              strokeWidth="1"
+              strokeLinecap="round"
+            />
+            <defs>
+              <linearGradient id="hero-line-4" x1="-20" y1="180" x2="560" y2="200" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#155FCC" stopOpacity="0.25" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.05" />
+              </linearGradient>
+              <linearGradient id="hero-line-5" x1="-20" y1="220" x2="560" y2="240" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#155FCC" stopOpacity="0.15" />
+                <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.05" />
+              </linearGradient>
+            </defs>
+          </svg>
+
+          {/* Subtle dot grid */}
+          <svg
+            className="absolute inset-0 h-full w-full opacity-[0.15]"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <pattern id="dot-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r="1" fill="#155FCC" fillOpacity="0.15" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dot-grid)" />
+          </svg>
+        </div>
+
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              <div className="mx-auto max-w-[800px] text-center">
+              <div className="mx-auto max-w-[800px] animate-fade-in text-center">
                 <h1 className="mb-5 text-xl leading-tight font-bold text-black xs:text-2xl sm:text-3xl md:text-4xl">
                   {t.hero.title}
                 </h1>
@@ -37,58 +134,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="absolute top-0 right-0 z-[-1] opacity-40 lg:opacity-70">
-          <svg
-            width="560"
-            height="360"
-            viewBox="0 0 560 360"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M40 300C140 220 260 220 360 250C430 270 500 260 560 230"
-              stroke="#4A6CF7"
-              strokeOpacity="0.25"
-              strokeWidth="1.5"
-            />
-            <path
-              d="M0 260C120 190 260 180 380 210C460 230 520 220 560 200"
-              stroke="#4A6CF7"
-              strokeOpacity="0.15"
-              strokeWidth="1"
-            />
-            <path
-              d="M80 330C200 250 340 260 460 290"
-              stroke="#4A6CF7"
-              strokeOpacity="0.1"
-              strokeWidth="1"
-            />
-          </svg>
-        </div>
-
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-40 lg:opacity-70">
-          <svg
-            width="520"
-            height="260"
-            viewBox="0 0 520 260"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M-20 160C100 120 220 130 320 160C400 185 460 190 520 180"
-              stroke="#4A6CF7"
-              strokeOpacity="0.2"
-              strokeWidth="1.5"
-            />
-            <path
-              d="M-20 200C120 170 260 170 360 200C440 225 480 230 520 220"
-              stroke="#4A6CF7"
-              strokeOpacity="0.12"
-              strokeWidth="1"
-            />
-          </svg>
         </div>
       </section>
     </>

@@ -105,6 +105,11 @@
   h6 {
     text-wrap: wrap;
   }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
 }
 
 @utility sticky {
@@ -165,5 +170,20 @@
 
   .marquee-motion {
     animation: brand-marquee 22s linear infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

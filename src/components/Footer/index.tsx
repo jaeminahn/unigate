@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Instagram, Youtube, Linkedin, NotebookPen } from "lucide-react";
+import { Instagram, Youtube, Linkedin } from "lucide-react";
+import TikTokIcon from "@/components/icons/TikTokIcon";
 import { useTranslation } from "@/lib/i18n/LanguageContext";
 
 const Footer = () => {
@@ -18,7 +19,7 @@ const Footer = () => {
 
   const social = [
     { label: "Instagram", href: "/", icon: Instagram },
-    { label: "Naver Blog", href: "/", icon: NotebookPen },
+    { label: "TikTok", href: "/", icon: TikTokIcon },
     { label: "YouTube", href: "/", icon: Youtube },
     {
       label: "LinkedIn",
