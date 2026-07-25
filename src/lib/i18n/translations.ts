@@ -90,7 +90,7 @@ export const translations = {
       ],
     },
     pricing: {
-      title: "Opsi kursus",
+      title: "Opsi Kursus",
       paragraph:
         "Kursus semester reguler diselenggarakan oleh universitas mitra, dan saat ini layanan ini hanya tersedia bagi mahasiswa Indonesia.",
       entry: {
